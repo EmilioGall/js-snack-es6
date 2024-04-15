@@ -1,4 +1,4 @@
-# JSnack 1 - es6
+# JSnack 2 - es6
 
 ## Text of the exercise
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
