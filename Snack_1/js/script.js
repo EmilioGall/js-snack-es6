@@ -52,7 +52,6 @@ let lighterBikeWeight = 0;
 
 console.log("lighterBikeWeight", lighterBikeWeight);
 
-// Define *variable* for weight of lighter bike.
 arrayBikesFeatures.forEach((element) => { 
 
     // Define *constant* for array element attributes.
