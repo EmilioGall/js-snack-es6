@@ -23,19 +23,30 @@ function getRandomIntInclusive(min, max) {
  */
 function numbersBetween(givenArray, lowerLimit, higherLimit) {
 
-  let flagArray = [ ];
+  let flagArray = givenArray.filter((numElement) => {
 
-  givenArray.forEach(element => {
-    
-    if ((element > lowerLimit) && (element < higherLimit)) {
+    if ((numElement > lowerLimit) && (numElement < higherLimit)) {
 
-      flagArray.push(element);
+      return true;
 
     };
 
+    return false;
+
   });
+
+  // let flagArray = [ ];
+
+  // givenArray.forEach(element => {
+    
+  //   if ((element > lowerLimit) && (element < higherLimit)) {
+
+  //     flagArray.push(element);
+
+  //   };
+
+  // });
 
   return flagArray;
 
 };
-  
