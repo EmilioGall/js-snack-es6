@@ -15,20 +15,21 @@ Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina
 
 - [x] Define *constant* for array of objects. (carsArray)
 >
-- [x] Define *variable* for model of lighter bike. (lighterBikeModel)
+- [x] Define *variable* for empty array of petrol cars. (petrolCarsArray)
 >
-- [x] Define *variable* for weight of lighter bike. (lighterBikeWeight)
+- [x] Define *variable* for empty array of diesel cars. (dieselCarsArray)
 >
-- [x] **FOR EACH** object element of the array (arrayBikesFeatures)
+- [x] Define *variable* for empty array of other cars. (otherCarsArray)
+>
+- [x] **FOR EACH** object element of the array (carsArray)
 
-    - [x] Define *constant* for array element attributes. {weight, model}
+    - [x] Define *constant* for array element attributes. {alimentazione}
 
-    - [x] **IF** (lighterBikeWeight === 0) *OR* (lighterBikeWeight > weight)
+    - [x] **IF** (alimentazione === "benzina")
+        - [x] Push the element in array (petrolCarsArray)
 
-        - [x] Set (lighterBikeWeight = weight).
+    - [x] **ELSE IF** (alimentazione === "diesel")
+        - [x] Push the element in array (dieselCarsArray)
 
-        - [x] Set (lighterBikeModel = model).
-
-### OUTPUT
-
-- [x] Print in the body DOM element the lighter model.
+    - [x] **ELSE**
+        - [x] Push the element in array (otherCarsArray)
